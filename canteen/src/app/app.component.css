@@ -1,0 +1,24 @@
+.navbar
+{
+    background-color: 	#76d475;
+}
+.order{
+    background-color: white;
+    
+}
+.order:hover{
+    background-color: #ffb8a7;
+}
+.order:active{
+    background-color: #ffb8a7;
+}
+.active:hover{
+    text-decoration: underline;
+    color: #ffb8a7;
+}
+.navtext
+{
+    color: #8f512c;
+    font-size: larger;
+    font-family:poppins,sans-serif;
+}

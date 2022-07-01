@@ -1,0 +1,31 @@
+<div class="container ">
+<div *ngIf=!len  class="text-center h1 mt-5">No recent order !</div>
+<h1 class="text-center p-4 h1 mt-5" *ngIf=len >Token Details :</h1>
+<table class="table text-center  mt-5 " *ngIf=len >
+    <thead class="heading">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            
+        </tr>     
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let a of order">
+            <td>{{a.name}}</td>
+            <td><i class="fas fa-rupee-sign pe-2 "></i>{{a.price}}</td>
+        </tr>
+        <tr class="k tot">
+            <td>total </td>
+            <td><i class="fas fa-rupee-sign pe-2 "></i>{{total}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf=len  class="text-center  ">
+    <h3>Paid<i class="fas fa-check mt-2 ps-2"></i></h3>
+    <button class="btn btn-lg my-5" (click)="onDelete()">Delete token</button>
+</div>
+
+
+</div>

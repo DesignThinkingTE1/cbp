@@ -1,0 +1,37 @@
+.b{
+    color: white;
+}
+.btn:hover
+{
+    color: black;
+    background-color:#76d475;
+    
+}
+.container
+{
+    color: white;
+}
+
+
+.table
+{
+    font-size: x-large;
+    color: white;
+}
+.p{
+    background-color: #632f2f;
+    color: white;
+}
+.p:hover
+{
+    background-color:darkslategrey;
+    color: white;
+}
+.tot{
+    background-color:#76d475;
+    color: black;
+}
+.h1
+{
+    text-decoration: underline;
+}

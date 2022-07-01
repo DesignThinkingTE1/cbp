@@ -1,0 +1,58 @@
+<div class="container  ">
+    <h1 class=" text-center mt-4 mb-3 h1">Today's Menu</h1>
+
+    <table class="table text-center ">
+        <thead class="heading ">
+            <tr class=" ">
+                <th>Name</th>
+                <th></th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of items">
+                <td>{{a.name}}</td>
+                <td><img src={{a.image}} alt="image" width="70px"></td>
+                <td><i class="fas fa-rupee-sign pe-2"></i>{{a.price}}</td>
+                <td><button class="btn btn-lg b"  (click)="onAdd(a)">Buy<i class="fas fa-shopping-cart ps-1"></i></button></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="pt-5 ">
+        <h1 class=" text-center mt-5 pt-5 pb-3 mb-4 h1">Your cart</h1>
+    </div>
+
+    <table class="table  text-center mb-5 " >
+        <thead class="heading">
+            <tr>
+                <th class="py-2">Name</th>
+                <th class="py-2">Price</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let a of order">
+                <td>{{a.name}}</td>
+                <td><i class="fas fa-rupee-sign pe-2 "></i>{{a.price}}</td>
+                <td><i class="fas fa-trash-alt b btn btn-lg" (click)="ondelete(a)"></i></td>
+            </tr>
+            <tr class="tot">
+                <td>Total </td>
+                <td><i class="fas fa-rupee-sign pe-2 "></i>{{total}}</td>
+                <td ><button class="btn btn-lg  p"  (click)="payDetails()">pay</button></td>
+            </tr>
+        </tbody>
+    </table>
+  
+        <div *ngIf=pay >
+          <p>phonepe: <button class="btn btn-lg" (click)="onLink()">link</button></p>
+            <p>phonepe/gpay/paytn number:4567890</p>
+        </div>
+
+        <div class="py-5"></div>
+</div>
+

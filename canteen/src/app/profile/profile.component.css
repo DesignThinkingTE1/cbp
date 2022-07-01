@@ -1,0 +1,27 @@
+.h1
+{
+    color: white;
+    
+}
+.table
+{
+    font-size: x-large;
+    color: white;
+}
+.tot{
+    background-color:#76d475;
+    color: black;
+}
+.btn:hover
+{
+    color: black;
+    background-color:lightskyblue;
+}
+.btn{
+    color: black;
+    background-color:#76d475;
+}
+.container
+{
+    color: white;
+}
